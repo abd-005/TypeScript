@@ -67,3 +67,51 @@ const logUserAction = (...args: [name: string, age: number, isActive: boolean]) 
 }
 
 logUserAction("Human", 23, true)
+
+
+//* Object type, Alias, Interface
+
+type UserName = string; 
+
+type Address = {
+  holdingNumber: number,
+  streetName: string,
+}; 
+
+type myAlias = {
+  name: UserName;
+  age: number;
+  isActive: boolean;
+  action: () => string;
+  badges: string[];
+}
+
+interface myInterface {
+  name: string;
+  age: number;
+  isActive: boolean;
+  action: () => string;
+  badges: string[];
+  address: Address;
+}
+
+const user: myAlias = {
+  name: "J",
+  age: 98,
+  isActive: true,
+  action: () => "subscribe",
+  badges: ["gold", "platinum"],
+}
+
+const user1: myInterface = {
+  name: "J",
+  age: 98,
+  isActive: true,
+  action: () => "subscribe",
+  badges: ["gold", "platinum"],
+  address: {
+    holdingNumber: 123,
+    streetName: "abc"
+  }
+}
+
