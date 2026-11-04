@@ -60,11 +60,10 @@ sum(1,2,3,4,5,6,7,8,9)
 
 // ---
 
-const logUserAction = (...args: [string, number, boolean]) => {
+const logUserAction = (...args: [name: string, age: number, isActive: boolean]) => {
   const [name, age] = args;
   console.log(name, "is", age, "years old.")
 
 }
 
 logUserAction("Human", 23, true)
-
