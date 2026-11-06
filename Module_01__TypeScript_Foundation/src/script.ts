@@ -22,7 +22,7 @@ const arrStr: string[] = ["Hello", "It's", "me!"];
 
 const MakkahLatLang: readonly [number, number] = [21.4266, 39.8256];
 
-// MakkahLatLang.push(2987) // throws error
+// MakkahLatLang.push(2987) //! throws error
 
 //* Optional, Default parameters
 
@@ -37,7 +37,8 @@ const concatName = (firstName: string, lastName?: string) => {
 console.log(concatName("Abdul"));
 
 const greetings = (fullName: string, greeting?: string) => {
-  //try not to make default the first parameter
+  //? try not to make default the first parameter
+
   console.log(greeting + " " + fullName);
 };
 
