@@ -8,4 +8,5 @@
 // import "./v5-special-types.js"
 // import "./v6-type-assertion.js"
 // import "./v7-narrowing.js"
-import "./v8-generic.js"
+// import "./v8-generic.js"
+import "./v9-promises.js"
