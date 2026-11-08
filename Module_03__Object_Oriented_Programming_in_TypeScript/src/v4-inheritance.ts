@@ -1,11 +1,4 @@
-//* Encapsulation: protect a state and change it through methods.
-
-//? Access Modifier
-//? public
-//? private
-//? protected
-
-//? readonly
+//* Inheritance: a child class reuses the parent class members via extends/super.
 
 class Employee {
     constructor(
