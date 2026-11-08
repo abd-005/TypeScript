@@ -28,7 +28,7 @@ type User = {
 const user: User = {
     name: "abc",
     address: {
-        street: "kjas",
+        street: "keas",
     }
 }
 
